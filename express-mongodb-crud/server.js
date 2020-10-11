@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 var cors = require('cors');
 
 
-
 // create express app
 const app = express();
 
@@ -37,8 +36,19 @@ app.get('/', (req, res) => {
 });
 
 require('./app/routes/note.routes.js')(app);
+require('./app/routes/companies.routes.js')(app);
+require('./app/routes/products.routes.js')(app);
 
 // listen for requests
 app.listen(3001, () => {
     console.log("Server is listening on port 3001");
 });
+
+// // Create a Server
+// var server = app.listen(3001, function () {
+
+//     var host = server.address().address
+//     var port = server.address().port
+  
+//     console.log("App listening at http://%s:%s", host, port)
+//   })

@@ -27,6 +27,12 @@ class Main extends Component {
                                     <li className="nav-item">
                                         <Link to={'/notes'} className="nav-link">Notes</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to={'/companies'} className="nav-link">Companies</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to={'/products'} className="nav-link">Products</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </nav> <br />
